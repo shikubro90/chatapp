@@ -97,26 +97,7 @@
 
             .navbar{
                 display: flex;
-                justify-content: space-between;
-                background-color: #2f2d52;
-                padding: 10px;
-                height: 50px;
-                align-items: center;
-
-                .user{
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-
-                    img{
-                        background: #ddddf7;
-                        height: 24px;
-                        width: 24px;
-                        border-radius: 50%;
-                        object-fit: cover;
-                    }
-
-                }
+                justify-content: space-around;
             }
 
         }
