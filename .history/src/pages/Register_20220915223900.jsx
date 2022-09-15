@@ -46,7 +46,7 @@ const Register = () => {
             await updateProfile(res.user,{
               displayName,
               photoURL: downloadURL
-            });
+            })
 
             await setDoc(doc(db, "users", res.user.uid),{
               uid: res.user.uid,
@@ -55,12 +55,11 @@ const Register = () => {
               photoURL: downloadURL,
             });
 
-            // await setDoc(doc(db,"chatUser", res.user.uid),{})
-            // navigate("/")
+            await setDoc(doc(db,"chatUser", res.user.uid),{})
+            navigate("/")
 
-          }); 
-        }
-      );
+          });
+        },)
     } catch (err) {
       setErr(true)
     }

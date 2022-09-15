@@ -13,10 +13,13 @@ function App() {
           <Route path='/'>
             <Route index element={<Home/>}/>
             <Route path='login' element={<Login/>} />
-            <Route path='register' element={<Register/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
+
+      <Register/>
+      {/* <Login/> */}
+      {/* <Home/> */}
     </div>
   );
 }
